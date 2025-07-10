@@ -1,0 +1,337 @@
+:root {
+    --primary-blue: #5a7dcd; /* Approximate blue from the button/links */
+    --light-blue-bg: #f5f8fa; /* A very light blue/off-white for backgrounds */
+    --text-color-dark: #333;
+    --text-color-light: #555;
+    --button-bg: #8ba8e6; /* Smoother blue for button */
+    --button-hover-bg: #6e8ccb;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-blue-bg);
+    color: var(--text-color-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--card-bg); /* Assuming the header is white */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-links a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active { /* Adicionado estilo para link ativo */
+    color: var(--primary-blue);
+}
+
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none; /* Hidden by default, shown on smaller screens */
+    color: var(--text-color-light);
+}
+
+/* Existing CSS from previous interactions should be here */
+
+/* Add the following new styles for the Guidelines page */
+
+/* Main content for Guidelines page (3 columns) */
+.guidelines-main-content {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1.5fr; /* Left, Middle, Right columns ratio */
+    gap: 30px;
+    padding: 40px 5%;
+    background-color: var(--light-blue-bg);
+    min-height: calc(100vh - 120px); /* Ocupa toda a altura da viewport menos o header */
+    margin-bottom: 40px; /* Espaço antes do footer */
+}
+
+/* Left Sidebar (Topics List) */
+.guidelines-sidebar {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 25px;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    max-height: calc(80vh - 50px); /* Adjust height to fit within main content area */
+}
+
+.guidelines-sidebar h2 {
+    font-size: 1.5em;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.guidelines-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.guidelines-nav ul li {
+    margin-bottom: 10px;
+}
+
+.guidelines-nav ul li strong {
+    display: block;
+    font-size: 1.1em;
+    color: var(--text-color-dark);
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.guidelines-nav ul li a {
+    display: block;
+    padding: 8px 10px;
+    color: var(--text-color-light);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-size: 0.95em;
+}
+
+.guidelines-nav ul li a:hover {
+    background-color: rgba(var(--primary-blue-rgb, 90, 125, 205), 0.1); /* Use RGB for rgba */
+    color: var(--primary-blue);
+}
+
+.guidelines-nav ul li a.active-topic {
+    background-color: var(--primary-blue);
+    color: white;
+    font-weight: 500;
+}
+
+/* Middle Content Area (Details) */
+.guidelines-content-area {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 30px;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    max-height: calc(80vh - 50px); /* Adjust height to fit */
+}
+
+.guidelines-content-area h2 {
+    font-size: 1.8em;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.guidelines-content-area h3 {
+    font-size: 1.2em;
+    color: var(--text-color-dark);
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.guidelines-content-area p {
+    font-size: 1em;
+    color: var(--text-color-light);
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.guidelines-content-area strong {
+    color: var(--text-color-dark);
+}
+
+.guidelines-content-area .placeholder-title {
+    text-align: center;
+    margin-top: 50px;
+    color: var(--text-color-light);
+}
+
+.guidelines-content-area .placeholder-text {
+    text-align: center;
+    color: var(--text-color-light);
+}
+
+/* Right Examples Area */
+.guidelines-examples-area {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    padding: 25px;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    max-height: calc(80vh - 50px); /* Adjust height to fit */
+}
+
+.guidelines-examples-area h2 {
+    font-size: 1.5em;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.guidelines-examples-area .example-item {
+    margin-bottom: 20px;
+    text-align: center; /* Center images and text within examples */
+}
+
+.guidelines-examples-area .example-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+
+.guidelines-examples-area .example-item p {
+    font-size: 0.9em;
+    color: var(--text-color-light);
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments for Guidelines page */
+@media (max-width: 992px) {
+    .guidelines-main-content {
+        grid-template-columns: 1fr 1fr; /* Two columns: Left and Right/Middle combined */
+    }
+
+    .guidelines-examples-area {
+        grid-column: 1 / -1; /* Make examples span full width below other columns */
+        max-height: none; /* Allow full height */
+    }
+
+    .guidelines-sidebar,
+    .guidelines-content-area {
+        max-height: none; /* Allow full height on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .guidelines-main-content {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+        padding: 20px;
+    }
+
+    .guidelines-sidebar,
+    .guidelines-content-area,
+    .guidelines-examples-area {
+        margin-bottom: 20px; /* Add space between stacked sections */
+    }
+}
+
+/* Add RGB variable for primary blue for rgba usage */
+:root {
+    --primary-blue: #5a7dcd;
+    --primary-blue-rgb: 90, 125, 205; /* Added for rgba calculations */
+    /* ... other variables */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--text-color-dark);
+    color: var(--light-blue-bg);
+    padding: 40px 5%;
+    font-size: 0.9em;
+    position: relative;
+    margin-top: auto; /* Empurra o footer para baixo */
+    transform: translateY(100%); /* Começa escondido */
+    transition: transform 0.3s ease;
+}
+
+.footer.visible {
+    transform: translateY(0); /* Mostra o footer quando a classe visible é adicionada */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.footer-section h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-section p,
+.footer-section ul {
+    color: var(--light-blue-bg);
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: var(--light-blue-bg);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-blue);
+}
+
+.footer-section.contact p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-section.contact i {
+    margin-right: 10px;
+    color: var(--primary-blue);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive adjustments for Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: unset;
+        max-width: 80%; /* Adjust as needed for better centering on small screens */
+    }
+}

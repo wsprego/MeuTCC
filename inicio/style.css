@@ -1,0 +1,315 @@
+:root {
+    --primary-blue: #5a7dcd; /* Approximate blue from the button/links */
+    --light-blue-bg: #f5f8fa; /* A very light blue/off-white for backgrounds */
+    --text-color-dark: #333;
+    --text-color-light: #555;
+    --button-bg: #8ba8e6; /* Smoother blue for button */
+    --button-hover-bg: #6e8ccb;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-blue-bg);
+    color: var(--text-color-dark);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--card-bg); /* Assuming the header is white */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-links a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active { /* Adicionado estilo para link ativo */
+    color: var(--primary-blue);
+}
+
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none; /* Hidden by default, shown on smaller screens */
+    color: var(--text-color-light);
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 5%;
+    gap: 40px;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px; /* Minimum width before wrapping */
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    color: var(--text-color-dark);
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    color: var(--text-color-light);
+    margin-bottom: 30px;
+    max-width: 450px;
+}
+
+.cta-button {
+    background-color: var(--button-bg);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 400px; /* Minimum width for image before wrapping */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes extra space below image */
+}
+
+/* Features Section */
+.features-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 5%;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    flex: 1;
+    min-width: 280px; /* Adjust based on desired card size */
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.icon-placeholder {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* You would replace this with actual SVG icons or icon fonts */
+}
+
+.icon-placeholder img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.feature-card h3 {
+    font-size: 1.3em;
+    color: var(--text-color-dark);
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1; /* Puts image above content on smaller screens */
+        margin-bottom: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links on smaller screens by default */
+    }
+
+    .menu-icon {
+        display: block; /* Show hamburger icon */
+    }
+
+    /* You would typically add JavaScript to toggle a mobile menu for .nav-links */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .hero-section {
+        padding: 60px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .features-section {
+        padding: 30px 20px;
+    }
+
+    .feature-card {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    .feature-card {
+        width: 100%; /* Full width on very small screens */
+        max-width: none;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--text-color-dark); /* Dark background for contrast */
+    color: var(--light-blue-bg); /* Light text color */
+    padding: 40px 5%;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.footer-section h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-section p,
+.footer-section ul {
+    color: var(--light-blue-bg);
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: var(--light-blue-bg);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-blue);
+}
+
+.footer-section.contact p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-section.contact i {
+    margin-right: 10px;
+    color: var(--primary-blue);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive adjustments for Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: unset;
+        max-width: 80%; /* Adjust as needed for better centering on small screens */
+    }
+}

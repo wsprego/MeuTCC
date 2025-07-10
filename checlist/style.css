@@ -1,0 +1,424 @@
+:root {
+    /* Mantenha as variáveis de cor e fonte existentes do seu style.css */
+    --primary-blue: #5a7dcd;
+    --light-blue-bg: #f5f8fa;
+    --text-color-dark: #333;
+    --text-color-light: #555;
+    --button-bg: #8ba8e6;
+    --button-hover-bg: #6e8ccb;
+    --card-bg: #ffffff;
+    --border-color: #e0e0e0;
+    --heading-color: #2c3e50;
+    --progress-bar-color: #4CAF50; /* Verde para a barra de progresso */
+    --progress-bg-color: #e0e0e0; /* Fundo da barra de progresso */
+}
+
+/* Base styles (from previous examples) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-blue-bg);
+    color: var(--text-color-dark);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-links a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary-blue);
+}
+
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    color: var(--text-color-light);
+}
+
+.content-section {
+    padding: 60px 5%;
+    max-width: 900px; /* Ajustado para a largura do checklist */
+    margin: 0 auto;
+}
+
+.header-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header-text h1 {
+    font-size: 2.5em; /* Ajustado para caber melhor */
+    color: var(--heading-color);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.header-text p {
+    font-size: 1em;
+    color: var(--text-color-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- Estilos para a Checklist --- */
+
+.checklist-container {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.progress-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color); /* Linha divisória */
+}
+
+.progress-section h2 {
+    font-size: 1.6em;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.progress-bar-wrapper {
+    width: 100%;
+    background-color: var(--progress-bg-color);
+    border-radius: 25px;
+    height: 25px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--progress-bar-color);
+    border-radius: 25px;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    transition: width 0.5s ease-in-out; /* Transição suave */
+}
+
+.progress-section p {
+    font-size: 1.1em;
+    color: var(--text-color-dark);
+    font-weight: 500;
+}
+
+.checklist-items {
+    margin-bottom: 40px;
+}
+
+.checklist-category {
+    margin-bottom: 30px;
+}
+
+.checklist-category h3 {
+    font-size: 1.4em;
+    color: var(--primary-blue); /* Cor para os títulos de categoria */
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(var(--primary-blue), 0.2);
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.checkbox-item {
+    display: flex; /* Alinha o checkbox e o texto */
+    align-items: flex-start; /* Alinha o texto ao topo do checkbox */
+    position: relative;
+    padding-left: 35px; /* Espaço para o checkbox customizado */
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--text-color-dark);
+    user-select: none; /* Evita seleção de texto duplo */
+}
+
+.checkbox-item input {
+    position: absolute;
+    opacity: 0; /* Esconde o checkbox original */
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Estilo do checkbox customizado */
+.checkmark {
+    position: absolute;
+    top: 3px; /* Ajuste vertical para alinhar com o texto */
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #eee;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Quando o checkbox é marcado */
+.checkbox-item input:checked ~ .checkmark {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+/* Ícone de "check" dentro do checkbox */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Mostra o ícone de "check" quando marcado */
+.checkbox-item input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Estilo do ícone de "check" */
+.checkbox-item .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox-item .item-text {
+    flex: 1; /* Permite que o texto ocupe o restante do espaço */
+    line-height: 1.5; /* Garante boa legibilidade para o texto do item */
+}
+
+/* Botão de Download */
+.download-button {
+    display: block; /* Ocupa a largura total */
+    width: fit-content; /* Ajusta-se ao conteúdo */
+    margin: 0 auto; /* Centraliza o botão */
+    padding: 15px 40px; /* Mais padding para um botão de destaque */
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 8px; /* Mais arredondado */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.download-button:hover {
+    background-color: var(--button-hover-bg);
+    transform: translateY(-2px);
+}
+
+/* --- Responsividade (adapte do seu style.css, adicione os breakpoints específicos para este layout) --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .content-section {
+        padding: 40px 20px;
+    }
+
+    .header-text h1 {
+        font-size: 2em;
+    }
+
+    .checklist-container {
+        padding: 30px 20px;
+    }
+
+    .progress-section h2 {
+        font-size: 1.4em;
+    }
+
+    .checklist-category h3 {
+        font-size: 1.2em;
+    }
+
+    .checkbox-item {
+        font-size: 0.95em;
+        padding-left: 30px;
+    }
+
+    .checkmark {
+        height: 20px;
+        width: 20px;
+        top: 2px;
+    }
+
+    .checkbox-item .checkmark:after {
+        left: 6px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border-width: 0 2px 2px 0;
+    }
+
+    .download-button {
+        width: 100%; /* Botão em largura total em telas menores */
+        font-size: 1.1em;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text h1 {
+        font-size: 1.8em;
+    }
+
+    .header-text p {
+        font-size: 0.9em;
+    }
+
+    .checklist-container {
+        padding: 20px 15px;
+    }
+
+    .progress-section h2 {
+        font-size: 1.2em;
+    }
+
+    .progress-section p {
+        font-size: 1em;
+    }
+
+    .checklist-category h3 {
+        font-size: 1.1em;
+    }
+
+    .checkbox-item {
+        font-size: 0.9em;
+        padding-left: 28px;
+    }
+
+    .checkmark {
+        height: 18px;
+        width: 18px;
+        top: 2px;
+    }
+
+    .checkbox-item .checkmark:after {
+        left: 5px;
+        top: 1px;
+        width: 4px;
+        height: 8px;
+        border-width: 0 2px 2px 0;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--text-color-dark); /* Dark background for contrast */
+    color: var(--light-blue-bg); /* Light text color */
+    padding: 40px 5%;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.footer-section h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.footer-section p,
+.footer-section ul {
+    color: var(--light-blue-bg);
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: var(--light-blue-bg);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-blue);
+}
+
+.footer-section.contact p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-section.contact i {
+    margin-right: 10px;
+    color: var(--primary-blue);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive adjustments for Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: unset;
+        max-width: 80%; /* Adjust as needed for better centering on small screens */
+    }
+}

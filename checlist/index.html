@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist Final de Acessibilidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    </head>
+<body>
+    <header class="navbar">
+        <nav class="nav-links">
+            <a href="../inicio/index.html">Início</a>
+            <a href="../fundamentos/index.html">Fundamentos</a>
+            <a href="../diretriz/index.html">Diretrizes</a>
+            <a href="../checlist/index.html" class="active">Checklist</a>
+            <a href="#">Sobre</a>
+        </nav>
+        <div class="menu-icon">
+            &#9776; </div>
+    </header>
+
+    <main class="content-section">
+        <div class="header-text">
+            <h1>Checklist Final de Design Inclusivo</h1>
+            <p>Revise seu projeto para garantir uma experiência digital acessível e amigável para pessoas no espectro autista.</p>
+        </div>
+
+        <div class="checklist-container">
+            <div class="progress-section">
+                <h2>Status de Adaptação para TEA</h2>
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar" id="progressBar" style="width: 0%;"></div>
+                </div>
+                <p id="progressText">0% adaptado</p>
+            </div>
+
+            <div class="checklist-items">
+                <div class="checklist-category">
+                    <h3>Visual e Perceptivo</h3>
+                    <label class="checkbox-item">
+                        <input type="checkbox" data-weight="10">
+                        <span class="checkmark"></span>
+                        <span class="item-text">Usei contraste suficiente entre texto e fundo?</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" data-weight="10">
+                        <span class="checkmark"></span>
+                        <span class="item-text">Evitei animações rápidas, piscantes ou sons automáticos?</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" data-weight="8">
+                        <span class="checkmark"></span>
+                        <span class="item-text">Mantive layouts limpos e desobstruídos, com espaçamento adequado?</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" data-weight="7">
+                        <span class="checkmark"></span>
+                        <span class="item-text">Utilizei ícones claros e autoexplicativos, acompanhados de texto?</span>
+                    </label>
+                </div>
+
+                <div class="checklist-category">
+                    <h3>Clareza e Previsibilidade</h3>
+                    <label class="checkbox-item">
+                        <input type="checkbox" data-weight="10">
+                        <span class="checkmark"></span>
+                        <span class="item-text">Forneci feedback claro e imediato para as ações do usuário?</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" data-weight="9">
+                        <span class="checkmark"></span>
+                        <span class="item-text">A linguagem é simples, direta e livre de gírias ou metáforas complexas?</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" data-weight="8">
+                        <span class="checkmark"></span>
+                        <span class="item-text">A navegação é consistente e previsível em todas as páginas?</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" data-weight="7">
+                        <span class="checkmark"></span>
+                        <span class="item-text">Existem instruções passo a passo claras para tarefas complexas?</span>
+                    </label>
+                </div>
+
+                <div class="checklist-category">
+                    <h3>Controle e Orientação</h3>
+                    <label class="checkbox-item">
+                        <input type="checkbox" data-weight="9">
+                        <span class="checkmark"></span>
+                        <span class="item-text">O usuário pode controlar o tempo de exibição de informações?</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" data-weight="8">
+                        <span class="checkmark"></span>
+                        <span class="item-text">Há opções para ajustar tamanho do texto, cores ou temas?</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" data-weight="6">
+                        <span class="checkmark"></span>
+                        <span class="item-text">Ofereço ajuda ou FAQ de fácil acesso e compreensão?</span>
+                    </label>
+                </div>
+            </div>
+
+            <button class="cta-button download-button">Baixar Checklist (PDF)</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>Sobre o Projeto</h3>
+                <p>Este projeto visa disseminar o conhecimento sobre acessibilidade digital, com foco em inclusão para todas as pessoas, incluindo aquelas com Transtorno do Espectro Autista (TEA).</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="../inicio/index.html">Início</a></li>
+                    <li><a href="../fundamentos/index.html">Fundamentos</a></li>
+                    <li><a href="../diretriz/index.html">Diretrizes</a></li>
+                    <li><a href="../checlist/index.html">Checklist</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contato</h3>
+                <p><i class="fas fa-envelope"></i> contato@acessibilidade.com</p>
+                <p><i class="fas fa-phone"></i> +55 11 91234-5678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Fundamentos da Acessibilidade. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../checlist/script.js"></script>
+
+</body>
+</html>
