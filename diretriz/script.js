@@ -2,16 +2,16 @@
 const guidelinesData = {
     "cores": {
         group: "Vocabulário Visual e Textual",
-        title: "G01 - Cores",
-        description: `As cores não devem ser a única forma de transmitir um conteúdo e o contraste entre as cores de fundo e objetos de primeiro plano deve ser adequado para distinguir os itens e diferenciar conteúdos ou relacionar informações similares.
-                      O conteúdo também deve ser compreendido sem imagens ou estilos e as cores devem ser utilizadas de forma adequada como um complemento para distinguir ou relacionar objetos.`,
+        title: "01 - Cores",
+        description: `As cores não devem ser o único recurso para transmitir informações. É importante garantir um bom contraste entre a cor de fundo e os elementos em primeiro plano para facilitar a distinção dos itens, a diferenciação de conteúdos ou a relação entre informações semelhantes. Além disso, o conteúdo precisa ser compreensível mesmo sem imagens ou estilos visuais, usando as cores apenas como um complemento para ajudar a identificar ou relacionar elementos.`,
         skills: "Atenção, Leitura, Compreensão verbal ou linguística, Compreensão visual",
-        why: `Elementos que usam somente cores, sem imagens ou texto para representação da informação, podem atrair a atenção da pessoa, principalmente crianças, sem que ela compreenda o que aquele elemento significa.
-              Além disso, o baixo contraste entre o fundo e o texto/objeto de primeiro plano dificulta a compreensão, a legibilidade e pode prejudicar a atenção da pessoa com TEA. Entretanto, as cores dos objetos e os diferentes contrastes podem ser usados para guiar a atenção e diferenciar elementos.`,
-        how: `A cor de fundo deve ser diferente o suficiente da cor do objeto do primeiro plano e possui contraste adequado. Dê preferência para planos de fundo de cores claras ou branco para destacar os objetos ou textos do primeiro plano.
-              Você pode utilizar cores para diferenciar seções de um site ou relacionar conteúdos similares.
-              Cores não deve ser a única forma de transmitir um conteúdo. O conteúdo também deve ser compreendido sem imagens ou estilos. É recomendável associar rótulos textuais a elementos.
-              Em caso de dúvidas se o contraste está adequado, utilize ferramentas de verificação de contraste para comparar a cor de plano de fundo e a cor do elemento do primeiro plano.`,
+        why: `Quando usamos apenas cores para transmitir uma mensagem, muitas pessoas — principalmente crianças ou pessoas com TEA — podem não entender o que aquele elemento quer dizer. <br>Além disso, se o contraste entre o fundo e o texto ou objeto for baixo, fica difícil de ler e compreender, o que pode prejudicar a atenção. Por outro lado, cores bem usadas e com bom contraste ajudam a guiar o olhar, separar informações e organizar melhor o conteúdo.`,
+        how: `Escolha cores de fundo diferentes das cores dos elementos em primeiro plano, garantindo contraste suficiente;
+        Prefira fundos claros ou brancos, pois ajudam a destacar textos e objetos;
+        Use cores para diferenciar seções ou para mostrar que elementos estão relacionados, mas sempre com apoio de texto ou ícones;
+        O conteúdo deve ser entendível mesmo sem cores ou imagens;
+        Adicione rótulos ou textos explicativos aos elementos;
+        Se tiver dúvida sobre o contraste, utilize ferramentas de verificação online para checar se as combinações estão acessíveis.`,
         examples: [
             { type: "text", content: "Exemplo de paleta de cores acessível:" },
             { type: "image", src:"../diretriz/imagens/paleta-cores-azul.png", alt: "Exemplo de paleta de cores acessível" },
@@ -23,11 +23,11 @@ const guidelinesData = {
     },
     "textos": {
         group: "Vocabulário Visual e Textual",
-        title: "G02 - Textos",
-        description: "Instruções claras e concisas, sem ambiguidades ou metáforas complexas. Uso de linguagem simples e direta.",
-        skills: "Leitura, Compreensão verbal ou linguística",
-        why: "Textos complexos ou ambíguos podem dificultar a compreensão para pessoas com TEA, que geralmente se beneficiam de informações literais e diretas.",
-        how: "Use frases curtas, vocabulário simples e evite jargões. Divida o conteúdo em parágrafos pequenos e utilize listas para facilitar a leitura. Evite sarcasmo, ironia e metáforas.",
+        title: "02 - Textos",
+        description: "Use sempre uma linguagem simples, tanto no texto quanto nos elementos visuais. Evite jargões, erros de ortografia, metáforas, abreviações ou siglas difíceis. Escolha termos, expressões, nomes e símbolos que sejam familiares e fáceis de entender para o seu público.",
+        skills: "Atenção, leitura, compreensão verbal ou linguística.",
+        why: "Pessoas com TEA podem ter dificuldade para entender textos longos, complexos ou com linguagem figurada. Metáforas, expressões populares ou textos com muitos detalhes podem confundir ou distrair, dificultando a compreensão. <br>Além disso, textos simples ajudam a manter a atenção e facilitam a aprendizagem de vocabulário, principalmente no caso de crianças.",
+        how: "Use uma linguagem clara, objetiva e fácil de entender; Evite jargões técnicos, expressões regionais ou palavras difíceis; Não use metáforas, linguagem figurada ou textos que possam ser interpretados de formas diferentes; Evite abreviações e siglas que não sejam amplamente conhecidas; Prefira textos curtos, sem parágrafos muito longos; Escreva rótulos e botões de forma clara e consistente, usando termos simples e diretos.; Escolha palavras e nomes que façam sentido para todos os usuários, não apenas para quem conhece uma área ou contexto específico; Utilize símbolos e ícones que sejam fáceis de reconhecer, com formas claras e contornos que ajudem a identificar o que representam.",
         examples: [
             { type: "text", content: "Exemplo de texto claro e direto:" },
             { type: "text", content: "<p style='font-family: \"Poppins\", sans-serif; font-size: 1em; line-height: 1.7; text-align: left;'>Clique no botão 'Enviar' para finalizar seu pedido.</p>" },
@@ -37,11 +37,11 @@ const guidelinesData = {
     },
     "legibilidade": {
         group: "Vocabulário Visual e Textual",
-        title: "G03 - Legibilidade",
-        description: "Tamanho de fonte adequado, espaçamento entre linhas e letras, e escolha de fontes sem serifa para melhor leitura.",
-        skills: "Leitura, Atenção visual",
-        why: "Fontes pequenas, espaçamento inadequado ou fontes complexas podem causar fadiga visual e dificultar a leitura para pessoas com TEA e outras deficiências visuais ou cognitivas.",
-        how: "Utilize tamanhos de fonte de pelo menos 16px para o corpo do texto. Use fontes sem serifa (como Poppins, Arial, Helvetica). Garanta um bom espaçamento entre linhas (line-height) e entre letras (letter-spacing).",
+        title: "03 - Legibilidade",
+        description: "Mantenha os textos curtos e diretos. Evite parágrafos longos e use marcações que ajudam na leitura, como listas, títulos e subtítulos para dividir o conteúdo. <br>Além de usar uma linguagem simples (veja a recomendação na aba 02-Textos), é importante organizar o texto de forma que fique fácil de ler. Usar subtítulos, listas e dividir o conteúdo em blocos menores facilita muito a leitura. Também é essencial cuidar do tamanho das linhas e do espaçamento.",
+        skills: "Atenção, leitura, compreensão verbal, compreensão visual.",
+        why: "Parágrafos longos e complexos podem confundir ou desviar a atenção, principalmente para pessoas com TEA. Textos bem divididos, com listas e subtítulos, ajudam a guiar a leitura, facilitam a compreensão e tornam a experiência mais agradável.",
+        how: "Divida o texto em parágrafos curtos; Use listas (como esta!) para organizar informações; Adicione títulos e subtítulos para separar os temas; Evite linhas muito longas (de preferência, até 80 caracteres por linha); Mantenha um bom espaçamento entre linhas para não 'apertar' o texto; Não alinhe o texto à direita; Use letras minúsculas, evite escrever tudo em caixa alta; Prefira fontes sem serifa, como Arial, Verdana, Helvetica ou Tahoma; Use linguagem simples, sem erros e sem expressões difíceis ou siglas; Seja objetivo e claro.",
         examples: [
             { type: "text", content: "Exemplo de fonte legível (Poppins):" },
             { type: "html", content: "<p style='font-family: \"Poppins\", sans-serif; font-size: 18px; line-height: 1.7; text-align: left; background-color: #e6f0ff; padding: 10px; border-radius: 5px;'>Este é um exemplo de texto com boa legibilidade.</p>" },
@@ -51,11 +51,11 @@ const guidelinesData = {
     },
     "compatibilidade_mundo_real": {
         group: "Vocabulário Visual e Textual",
-        title: "G04 - Compatibilidade com mundo real",
-        description: "Utilizar termos e conceitos familiares aos usuários, alinhando a interface com as expectativas do mundo real.",
-        skills: "Compreensão verbal ou linguística, Compreensão visual",
-        why: "Interfaces que usam jargões técnicos ou metáforas abstratas podem ser confusas. Alinhar o design com o mundo real facilita a compreensão e a navegação.",
-        how: "Use ícones e rótulos que representem objetos ou ações do dia a dia. Evite termos técnicos desnecessários. Mantenha a consistência com convenções de design amplamente aceitas.",
+        title: "04 - Compatibilidade com mundo real",
+        description: "Os ícones, imagens, nomes de botões e menus devem ser parecidos com o que as pessoas já conhecem na vida real. Eles precisam representar ações concretas e do dia a dia, para que sejam fáceis de reconhecer. <br>Pessoas com TEA podem ter dificuldade para entender metáforas ou imagens que exigem imaginação. Por isso, é importante usar elementos visuais que sejam claros e baseados em situações reais. Em sites e aplicativos para crianças, essa prática também ajuda no aprendizado de novas palavras e ações que poderão usar no cotidiano.",
+        skills: "Memorização, atenção, leitura, compreensão verbal, compreensão visual.",
+        why: "Pessoas com TEA podem não entender imagens ou símbolos abstratos, fantasiosos ou que representem algo de forma indireta. Usar ações, ícones e elementos parecidos com o mundo real facilita o reconhecimento e torna a interação mais intuitiva.",
+        how: "Escolha ícones e imagens que mostrem claramente ações reais, evitando metáforas; Prefira símbolos que as pessoas já veem ou usam no dia a dia; Para crianças, use ações e interações que elas possam aprender e aplicar na vida real; Em dispositivos móveis (como tablets), aproveite gestos e toques já conhecidos, como arrastar ou deslizar; Use imagens, gráficos e personagens que ajudem a manter o foco e a entender melhor as tarefas; Relacione as atividades com experiências comuns e habilidades que a criança já conhece; Reproduza ações, objetos e interações que sejam familiares e fáceis de identificar.",
         examples: [
             { type: "text", content: "Exemplo: Ícone de 'casa' para 'Início' (familiar)." },
             { type: "image", src: "https://placehold.co/100x100/5a7dcd/ffffff?text=Home+Icon", alt: "Ícone de casa" },
