@@ -5,7 +5,7 @@ const guidelinesData = {
         title: "01 - Cores",
         description: `As cores não devem ser o único recurso para transmitir informações. É importante garantir um bom contraste entre a cor de fundo e os elementos em primeiro plano para facilitar a distinção dos itens, a diferenciação de conteúdos ou a relação entre informações semelhantes. Além disso, o conteúdo precisa ser compreensível mesmo sem imagens ou estilos visuais, usando as cores apenas como um complemento para ajudar a identificar ou relacionar elementos.`,
         skills: "Atenção, Leitura, Compreensão verbal ou linguística, Compreensão visual",
-        why: `Quando usamos apenas cores para transmitir uma mensagem, muitas pessoas — principalmente crianças ou pessoas com TEA — podem não entender o que aquele elemento quer dizer. <br>Além disso, se o contraste entre o fundo e o texto ou objeto for baixo, fica difícil de ler e compreender, o que pode prejudicar a atenção. Por outro lado, cores bem usadas e com bom contraste ajudam a guiar o olhar, separar informações e organizar melhor o conteúdo.`,
+        why: `Quando usamos apenas cores para transmitir uma mensagem, muitas pessoas — principalmente crianças ou pessoas com TEA — podem não entender o que aquele elemento quer dizer. <br> Além disso, se o contraste entre o fundo e o texto ou objeto for baixo, fica difícil de ler e compreender, o que pode prejudicar a atenção. Por outro lado, cores bem usadas e com bom contraste ajudam a guiar o olhar, separar informações e organizar melhor o conteúdo.`,
         how: `Escolha cores de fundo diferentes das cores dos elementos em primeiro plano, garantindo contraste suficiente;
         Prefira fundos claros ou brancos, pois ajudam a destacar textos e objetos;
         Use cores para diferenciar seções ou para mostrar que elementos estão relacionados, mas sempre com apoio de texto ou ícones;
@@ -26,7 +26,7 @@ const guidelinesData = {
         title: "02 - Textos",
         description: "Use sempre uma linguagem simples, tanto no texto quanto nos elementos visuais. Evite jargões, erros de ortografia, metáforas, abreviações ou siglas difíceis. Escolha termos, expressões, nomes e símbolos que sejam familiares e fáceis de entender para o seu público.",
         skills: "Atenção, leitura, compreensão verbal ou linguística.",
-        why: "Pessoas com TEA podem ter dificuldade para entender textos longos, complexos ou com linguagem figurada. Metáforas, expressões populares ou textos com muitos detalhes podem confundir ou distrair, dificultando a compreensão. <br>Além disso, textos simples ajudam a manter a atenção e facilitam a aprendizagem de vocabulário, principalmente no caso de crianças.",
+        why: "Pessoas com TEA podem ter dificuldade para entender textos longos, complexos ou com linguagem figurada. Metáforas, expressões populares ou textos com muitos detalhes podem confundir ou distrair, dificultando a compreensão. <br> Além disso, textos simples ajudam a manter a atenção e facilitam a aprendizagem de vocabulário, principalmente no caso de crianças.",
         how: "Use uma linguagem clara, objetiva e fácil de entender; Evite jargões técnicos, expressões regionais ou palavras difíceis; Não use metáforas, linguagem figurada ou textos que possam ser interpretados de formas diferentes; Evite abreviações e siglas que não sejam amplamente conhecidas; Prefira textos curtos, sem parágrafos muito longos; Escreva rótulos e botões de forma clara e consistente, usando termos simples e diretos.; Escolha palavras e nomes que façam sentido para todos os usuários, não apenas para quem conhece uma área ou contexto específico; Utilize símbolos e ícones que sejam fáceis de reconhecer, com formas claras e contornos que ajudem a identificar o que representam.",
         examples: [
             { type: "text", content: "Exemplo de texto claro e direto:" },
@@ -52,7 +52,7 @@ const guidelinesData = {
     "compatibilidade_mundo_real": {
         group: "Vocabulário Visual e Textual",
         title: "04 - Compatibilidade com mundo real",
-        description: "Os ícones, imagens, nomes de botões e menus devem ser parecidos com o que as pessoas já conhecem na vida real. Eles precisam representar ações concretas e do dia a dia, para que sejam fáceis de reconhecer. <br>Pessoas com TEA podem ter dificuldade para entender metáforas ou imagens que exigem imaginação. Por isso, é importante usar elementos visuais que sejam claros e baseados em situações reais. Em sites e aplicativos para crianças, essa prática também ajuda no aprendizado de novas palavras e ações que poderão usar no cotidiano.",
+        description: "Os ícones, imagens, nomes de botões e menus devem ser parecidos com o que as pessoas já conhecem na vida real. Eles precisam representar ações concretas e do dia a dia, para que sejam fáceis de reconhecer. <br> Pessoas com TEA podem ter dificuldade para entender metáforas ou imagens que exigem imaginação. Por isso, é importante usar elementos visuais que sejam claros e baseados em situações reais. Em sites e aplicativos para crianças, essa prática também ajuda no aprendizado de novas palavras e ações que poderão usar no cotidiano.",
         skills: "Memorização, atenção, leitura, compreensão verbal, compreensão visual.",
         why: "Pessoas com TEA podem não entender imagens ou símbolos abstratos, fantasiosos ou que representem algo de forma indireta. Usar ações, ícones e elementos parecidos com o mundo real facilita o reconhecimento e torna a interação mais intuitiva.",
         how: "Escolha ícones e imagens que mostrem claramente ações reais, evitando metáforas; Prefira símbolos que as pessoas já veem ou usam no dia a dia; Para crianças, use ações e interações que elas possam aprender e aplicar na vida real; Em dispositivos móveis (como tablets), aproveite gestos e toques já conhecidos, como arrastar ou deslizar; Use imagens, gráficos e personagens que ajudem a manter o foco e a entender melhor as tarefas; Relacione as atividades com experiências comuns e habilidades que a criança já conhece; Reproduza ações, objetos e interações que sejam familiares e fáceis de identificar.",
@@ -65,10 +65,10 @@ const guidelinesData = {
     "customizacao_visual": {
         group: "Customização",
         title: "G05 - Customização visual",
-        description: "Permitir que o usuário personalize aspectos visuais da interface, como tamanho da fonte, cores e contraste.",
-        skills: "Atenção, Compreensão visual",
-        why: "A personalização visual permite que usuários com diferentes necessidades visuais e sensoriais ajustem a interface para seu conforto e legibilidade.",
-        how: "Ofereça opções de tema (claro/escuro), ajuste de tamanho de fonte, e controle de contraste. Utilize CSS custom properties para facilitar a implementação.",
+        description: "A customização visual consiste em oferecer ao usuário a possibilidade de ajustar elementos da interface — como cores, tamanho de texto, fontes e sons — de acordo com suas preferências. Essa flexibilidade permite que cada pessoa adapte a experiência de uso para torná-la mais confortável e adequada às suas necessidades.",
+        skills: "Atenção, leitura, compreensão verbal ou linguística, compreensão visual e adaptação a mudanças ou transições.",
+        why: "Pessoas no espectro autista (TEA) apresentam uma grande diversidade de preferências visuais e sensoriais, o que torna difícil identificar padrões universais. Uma cor que pode ser agradável para uma pessoa pode ser incômoda para outra. Por isso, oferecer opções de personalização garante maior inclusão, permitindo que cada indivíduo configure a interface de forma mais adequada à sua experiência sensorial e cognitiva.",
+        how: "Disponibilize controles para ajuste do tamanho do texto, mesmo que navegadores já possuam funções nativas; Permita alterar esquemas de cores, incluindo um modo de alto contraste; Ofereça opções para escolher diferentes fontes tipográficas; Possibilite a personalização de sons e vozes utilizadas em botões com narração; Forneça configurações para alterar o posicionamento da navegação e controlar a execução de sons ou narrativas.",
         examples: [
             { type: "text", content: "Exemplo de seletor de tema (claro/escuro):" },
             { type: "image", src: "https://placehold.co/200x80/f5f8fa/333333?text=Botão+Tema", alt: "Botão de tema claro/escuro" }
@@ -77,10 +77,10 @@ const guidelinesData = {
     "customizacao_informacional": {
         group: "Customização",
         title: "G06 - Customização informacional",
-        description: "Permitir que o usuário personalize o tipo e a quantidade de informação exibida.",
-        skills: "Atenção, Compreensão verbal ou linguística",
-        why: "Pessoas com TEA podem ser sobrecarregadas por excesso de informação. A customização informacional ajuda a reduzir a carga cognitiva.",
-        how: "Ofereça filtros para dados, opções para ocultar/mostrar detalhes, e a capacidade de reordenar ou priorizar informações.",
+        description: "A customização informacional consiste em permitir que o usuário escolha como deseja receber as informações, seja por meio de texto, áudio ou imagens. Essa flexibilidade é especialmente importante para pessoas no espectro autista (TEA), pois reconhece que cada indivíduo pode ter diferentes formas de processar e compreender conteúdos.",
+        skills: "Atenção, leitura, compreensão visual, adaptação a mudanças",
+        why: "Indivíduos com TEA podem apresentar sensibilidades e preferências distintas: alguns são mais receptivos a estímulos visuais, outros a estímulos sonoros, e há aqueles que necessitam de textos ou narrativas para compreender melhor as informações. Assim, embora seja recomendável oferecer múltiplas formas de apresentação (representações redundantes), também é essencial dar ao usuário o controle para escolher as que mais se adequam às suas necessidades. <br> Por exemplo, crianças em fase de letramento podem preferir imagens e instruções sonoras em vez de textos escritos..",
+        how: "Permitir que botões exibam apenas texto, apenas símbolos ou a combinação de ambos; Tornar sons, incluindo músicas, opcionais e com controle de volume; Disponibilizar opções para alterar cores, fontes e vozes utilizadas em botões narrados; Permitir personalizar as cores e sons do site ou aplicação.",
         examples: [
             { type: "text", content: "Exemplo de filtro de informações (mostrar/ocultar):" },
             { type: "image", src: "https://placehold.co/250x100/f5f8fa/333333?text=Filtro+Informações", alt: "Exemplo de filtro de informações" }
@@ -89,10 +89,10 @@ const guidelinesData = {
     "interfaces_flexiveis": {
         group: "Customização",
         title: "G07 - Interfaces flexíveis",
-        description: "Criar interfaces que se adaptam a diferentes formas de interação e dispositivos.",
-        skills: "Interação, Atenção",
-        why: "A flexibilidade garante que a interface seja utilizável por pessoas com diferentes habilidades motoras, cognitivas ou que utilizam tecnologias assistivas.",
-        how: "Implemente design responsivo, suporte a navegação por teclado, e garanta que todos os elementos interativos sejam acessíveis por mouse, toque e teclado.",
+        description: "Interfaces flexíveis permitem que o usuário personalize tanto a quantidade quanto a disposição dos elementos na tela, além de ajustar funcionalidades conforme suas necessidades e preferências. Essa abordagem é especialmente relevante para pessoas no espectro autista (TEA), pois reconhece que cada indivíduo interage de forma única com sistemas digitais. <br> Ao oferecer a possibilidade de adaptação do layout e dos recursos, o site ou aplicação torna-se mais inclusivo, acessível e confortável para diferentes perfis de usuários.",
+        skills: "Atenção, leitura, compreensão visual, adaptação a mudanças e organização de informações.",
+        why: "Para muitas pessoas com TEA, a previsibilidade e o controle sobre a experiência digital reduzem a ansiedade e aumentam o engajamento. Permitir ajustes na interface possibilita que o usuário adeque o conteúdo e as funcionalidades de forma que se sinta seguro e confortável. <br>Além disso, pais, educadores e terapeutas podem configurar a plataforma para atender às necessidades específicas de cada pessoa, personalizando desde elementos visuais até a forma de interação.",
+        how: "Personalização de conteúdo: possibilitar que o usuário adicione elementos familiares ou significativos, como fotos pessoais, ícones conhecidos ou personagens preferidos, especialmente úteis para crianças; Controle da complexidade visual: permitir o ajuste da quantidade de elementos exibidos na tela, facilitando a concentração e evitando sobrecarga sensorial; Organização e acompanhamento: incluir recursos para ordenar atividades, salvar progresso e indicar a conclusão de tarefas — recurso essencial para atividades longas ou com múltiplas etapas; Flexibilidade de interação: oferecer diferentes formas de realizar a mesma tarefa (toque, arraste, comando de voz etc.), considerando particularidades do TEA, como dificuldades motoras ou sensoriais; Configurações salvas: permitir que as preferências do usuário sejam armazenadas, garantindo que ele não precise reconfigurar a aplicação a cada uso.",
         examples: [
             { type: "text", content: "Exemplo de layout responsivo (desktop):" },
             { type: "image", src: "https://placehold.co/400x200/5a7dcd/ffffff?text=Desktop+Layout", alt: "Layout de desktop" },
@@ -103,10 +103,10 @@ const guidelinesData = {
     "modo_leitura": {
         group: "Customização",
         title: "G08 - Modo de leitura",
-        description: "Oferecer um modo de leitura simplificado que remove distrações e foca no conteúdo principal.",
-        skills: "Leitura, Atenção",
-        why: "Um modo de leitura pode ser extremamente benéfico para pessoas com TEA ou TDAH, pois minimiza estímulos visuais e foca a atenção no texto.",
-        how: "Crie um botão para ativar/desativar o modo de leitura que ajusta o layout, remove barras laterais, anúncios e usa uma tipografia otimizada para leitura.",
+        description: "O modo de leitura é um recurso que permite ao usuário focar exclusivamente no conteúdo textual, ocultando elementos visuais desnecessários e minimizando distrações. Esse recurso é especialmente importante em sites e aplicações voltados para atividades que exigem leitura, atenção e compreensão, sendo altamente recomendável para contextos educativos ou informativos, principalmente para pessoas no espectro autista (TEA). <br>Quando ativado, o modo de leitura remove menus, banners, anúncios e outros elementos que possam competir pela atenção, exibindo apenas o texto em um formato limpo, com cores suaves e espaçamento adequado. Esse recurso pode ser semelhante ao “modo de impressão”, que também apresenta o conteúdo de forma simplificada e organizada.",
+        skills: "Atenção, leitura, compreensão visual, capacidade de manter o foco e adaptação a mudanças ou transições.",
+        why: "Pessoas com TEA podem apresentar maior sensibilidade a estímulos visuais e dificuldade em manter a atenção quando há muitos elementos competindo pelo foco na tela. O modo de leitura ajuda a criar um ambiente mais calmo e organizado, reduzindo a sobrecarga sensorial e aumentando a eficiência na absorção das informações. <br>Além disso, ele beneficia não apenas o público-alvo, mas qualquer pessoa que precise ler textos longos sem distrações, como estudantes, pesquisadores e profissionais.",
+        how: "Ativação simples: incluir um botão ou atalho de teclado para ativar e desativar rapidamente o modo de leitura.; Ajustes de personalização: permitir a alteração do tamanho e do tipo da fonte, do espaçamento entre linhas e das margens para facilitar a leitura.; Opções visuais: incluir modos de contraste (alto contraste, modo escuro, modo sépia) para atender diferentes necessidades visuais.; Modo de impressão integrado: permitir que o mesmo layout limpo seja usado tanto para leitura quanto para impressão, garantindo que o texto seja impresso sem elementos irrelevantes.; Configurações persistentes: salvar as preferências do usuário para que, ao retornar ao site ou aplicação, ele encontre o ambiente configurado conforme sua necessidade.; Compatibilidade com leitores de tela: garantir que o modo de leitura seja acessível também para usuários que utilizam tecnologias assistivas.",
         examples: [
             { type: "text", content: "Exemplo de botão 'Modo de Leitura':" },
             { type: "image", src: "https://placehold.co/150x50/8ba8e6/ffffff?text=Modo+Leitura", alt: "Botão Modo de Leitura" }
@@ -179,54 +179,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to update content based on selected topic
     function updateContent(topicKey) {
-        const topic = guidelinesData[topicKey];
+    const topic = guidelinesData[topicKey];
 
-        // Clear previous content
-        guidelineDetails.innerHTML = '';
-        guidelineExamples.innerHTML = '';
+    guidelineDetails.innerHTML = '';
+    guidelineExamples.innerHTML = '';
 
-        if (!topic) {
-            guidelineDetails.innerHTML = '<h2 class="placeholder-title">Tópico não encontrado.</h2><p class="placeholder-text">Por favor, selecione um tópico válido.</p>';
-            guidelineExamples.innerHTML = '<p class="placeholder-text">Nenhum exemplo disponível.</p>';
-            return;
-        }
-
-        // Update middle column (details)
-        const detailsHtml = `
-            <h2>${topic.title}</h2>
-            <p>${topic.description}</p>
-            <h3>Habilidades trabalhadas</h3>
-            <p>${topic.skills}</p>
-            <h3>Por que fazer?</h3>
-            <p>${topic.why}</p>
-            <h3>Como fazer?</h3>
-            <p>${topic.how}</p>
-        `;
-        guidelineDetails.innerHTML = detailsHtml;
-
-        // Update right column (examples)
-        topic.examples.forEach(example => {
-            const exampleItem = document.createElement('div');
-            exampleItem.classList.add('example-item');
-            if (example.type === "text") {
-                exampleItem.innerHTML = `<p>${example.content}</p>`;
-            } else if (example.type === "image") {
-                exampleItem.innerHTML = `<img src="${example.src}" alt="${example.alt || ''}"><p>${example.content || ''}</p>`;
-            } else if (example.type === "html") {
-                exampleItem.innerHTML = example.content; // Directly inject HTML
-            }
-            guidelineExamples.appendChild(exampleItem);
-        });
-
-        // Update active class for sidebar links
-        document.querySelectorAll('.guidelines-nav ul li a').forEach(link => {
-            link.classList.remove('active-topic');
-        });
-        const activeLink = document.querySelector(`.guidelines-nav ul li a[data-topic="${topicKey}"]`);
-        if (activeLink) {
-            activeLink.classList.add('active-topic');
-        }
+    if (!topic) {
+        guidelineDetails.innerHTML = '<h2 class="placeholder-title">Tópico não encontrado.</h2><p class="placeholder-text">Por favor, selecione um tópico válido.</p>';
+        guidelineExamples.innerHTML = '<p class="placeholder-text">Nenhum exemplo disponível.</p>';
+        return;
     }
+
+    const detailsHtml = `
+        <h2>${topic.title}</h2>
+        <p>${topic.description}</p>
+        <h3>Habilidades trabalhadas</h3>
+        <p>${topic.skills}</p>
+        <h3>Por que fazer?</h3>
+        <p>${topic.why}</p>
+        <h3>Como fazer?</h3>
+        <ul>
+            ${topic.how.split(';').map(item => `<li>${item.trim()}</li>`).join('')}
+        </ul>
+    `;
+    guidelineDetails.innerHTML = detailsHtml;
+
+    topic.examples.forEach(example => {
+        const exampleItem = document.createElement('div');
+        exampleItem.classList.add('example-item');
+        if (example.type === "text") {
+            exampleItem.innerHTML = `<p>${example.content}</p>`;
+        } else if (example.type === "image") {
+            exampleItem.innerHTML = `<img src="${example.src}" alt="${example.alt}">`;
+        } else if (example.type === "html") {
+            exampleItem.innerHTML = example.content;
+        }
+        guidelineExamples.appendChild(exampleItem);
+    });
+}
+
 
     // Handle clicks on sidebar links
     guidelinesList.addEventListener('click', (event) => {
