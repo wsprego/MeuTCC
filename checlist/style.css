@@ -9,7 +9,7 @@
     --card-bg: #ffffff;
     --border-color: #e0e0e0;
     --heading-color: #2c3e50;
-    --progress-bar-color: #4CAF50; /* Verde para a barra de progresso */
+    --progress-bar-color: #5b4caf; /* Verde para a barra de progresso */
     --progress-bg-color: #e0e0e0; /* Fundo da barra de progresso */
 }
 
@@ -356,7 +356,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .footer-section {

@@ -16,12 +16,13 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: var(--light-blue-bg);
     color: var(--text-color-dark);
 }
 
+        /* Navegação */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -52,120 +53,36 @@ body {
     color: var(--text-color-light);
 }
 
-/* Hero Section */
-.hero-section {
+        /* Seção Hero */
+.hero {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 5%;
-    gap: 40px;
-    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    justify-content: center; /* centraliza horizontal */
+    align-items: center; /* centraliza vertical */
+    text-align: center; /* centraliza o texto */
+    padding: 80px 20px;
+    min-height: 80vh; /* ocupa quase a tela toda */
 }
 
 .hero-content {
-    flex: 1;
-    min-width: 300px; /* Minimum width before wrapping */
-    max-width: 600px;
+    max-width: 800px; /* controla largura para leitura */
 }
 
 .hero-content h1 {
-    font-size: 3em;
-    color: var(--text-color-dark);
-    margin-bottom: 20px;
-    line-height: 1.2;
+    font-size: 42px;
     font-weight: 700;
+    margin-bottom: 25px;
+    color: #1A2A3A;
+    line-height: 1.2;
 }
 
 .hero-content p {
-    font-size: 1.1em;
+    font-size: 18px;
+    line-height: 1.8; /* mais espaço entre linhas */
     color: var(--text-color-light);
-    margin-bottom: 30px;
-    max-width: 450px;
+    margin: 0 auto; /* centraliza */
 }
 
-.cta-button {
-    background-color: var(--button-bg);
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-weight: 600;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
 
-.cta-button:hover {
-    background-color: var(--button-hover-bg);
-}
-
-.hero-image {
-    flex: 1;
-    min-width: 400px; /* Minimum width for image before wrapping */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Removes extra space below image */
-}
-
-/* Features Section */
-.features-section {
-    display: flex;
-    justify-content: center;
-    padding: 50px 5%;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.feature-card {
-    background-color: var(--card-bg);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    flex: 1;
-    min-width: 280px; /* Adjust based on desired card size */
-    max-width: 550px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-}
-
-.icon-placeholder {
-    width: 800px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    /* You would replace this with actual SVG icons or icon fonts */
-}
-
-.icon-placeholder img {
-    max-width: 70%;
-    max-height: 70%;
-    object-fit: contain;
-}
-
-.feature-card h3 {
-    font-size: 1.3em;
-    color: var(--text-color-dark);
-    font-weight: 600;
-}
-
-/* Responsive adjustments */
 @media (max-width: 992px) {
     .hero-section {
         flex-direction: column;
@@ -194,47 +111,62 @@ body {
     }
 
     /* You would typically add JavaScript to toggle a mobile menu for .nav-links */
+}       
+
+        
+
+.hero-image {
+    flex: 1;
+    text-align: right;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        padding: 15px 20px;
-    }
-
-    .hero-section {
-        padding: 60px 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 2em;
-    }
-
-    .features-section {
-        padding: 30px 20px;
-    }
-
-    .feature-card {
-        min-width: 250px;
-    }
+.hero-image img {
+    max-width: 100%;
+    height: auto;
 }
 
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 1.8em;
-    }
-
-    .cta-button {
-        padding: 12px 25px;
-        font-size: 1em;
-    }
-
-    .feature-card {
-        width: 100%; /* Full width on very small screens */
-        max-width: none;
-    }
+/* Grid de Cards */
+.container {
+    padding: 40px 10%;
 }
 
-/* Footer Styles */
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: -50px; /* Sobreposição leve no hero */
+}
+
+.card {
+    background: var(--white);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+        /* Footer Styles */
 .footer {
     background-color: var(--text-color-dark); /* Dark background for contrast */
     color: var(--light-blue-bg); /* Light text color */
@@ -247,7 +179,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .footer-section {
