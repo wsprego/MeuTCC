@@ -64,7 +64,7 @@ const guidelinesData = {
     },
     "customizacao_visual": {
         group: "Customização",
-        title: "G05 - Customização visual",
+        title: "05 - Customização visual",
         description: "A customização visual consiste em oferecer ao usuário a possibilidade de ajustar elementos da interface — como cores, tamanho de texto, fontes e sons — de acordo com suas preferências. Essa flexibilidade permite que cada pessoa adapte a experiência de uso para torná-la mais confortável e adequada às suas necessidades.",
         skills: "Atenção, leitura, compreensão verbal ou linguística, compreensão visual e adaptação a mudanças ou transições.",
         why: "Pessoas no espectro autista (TEA) apresentam uma grande diversidade de preferências visuais e sensoriais, o que torna difícil identificar padrões universais. Uma cor que pode ser agradável para uma pessoa pode ser incômoda para outra. Por isso, oferecer opções de personalização garante maior inclusão, permitindo que cada indivíduo configure a interface de forma mais adequada à sua experiência sensorial e cognitiva.",
@@ -76,7 +76,7 @@ const guidelinesData = {
     },
     "customizacao_informacional": {
         group: "Customização",
-        title: "G06 - Customização informacional",
+        title: "06 - Customização informacional",
         description: "A customização informacional consiste em permitir que o usuário escolha como deseja receber as informações, seja por meio de texto, áudio ou imagens. Essa flexibilidade é especialmente importante para pessoas no espectro autista (TEA), pois reconhece que cada indivíduo pode ter diferentes formas de processar e compreender conteúdos.",
         skills: "Atenção, leitura, compreensão visual, adaptação a mudanças",
         why: "Indivíduos com TEA podem apresentar sensibilidades e preferências distintas: alguns são mais receptivos a estímulos visuais, outros a estímulos sonoros, e há aqueles que necessitam de textos ou narrativas para compreender melhor as informações. Assim, embora seja recomendável oferecer múltiplas formas de apresentação (representações redundantes), também é essencial dar ao usuário o controle para escolher as que mais se adequam às suas necessidades. <br> Por exemplo, crianças em fase de letramento podem preferir imagens e instruções sonoras em vez de textos escritos..",
@@ -88,7 +88,7 @@ const guidelinesData = {
     },
     "interfaces_flexiveis": {
         group: "Customização",
-        title: "G07 - Interfaces flexíveis",
+        title: "07 - Interfaces flexíveis",
         description: "Interfaces flexíveis permitem que o usuário personalize tanto a quantidade quanto a disposição dos elementos na tela, além de ajustar funcionalidades conforme suas necessidades e preferências. Essa abordagem é especialmente relevante para pessoas no espectro autista (TEA), pois reconhece que cada indivíduo interage de forma única com sistemas digitais. <br> Ao oferecer a possibilidade de adaptação do layout e dos recursos, o site ou aplicação torna-se mais inclusivo, acessível e confortável para diferentes perfis de usuários.",
         skills: "Atenção, leitura, compreensão visual, adaptação a mudanças e organização de informações.",
         why: "Para muitas pessoas com TEA, a previsibilidade e o controle sobre a experiência digital reduzem a ansiedade e aumentam o engajamento. Permitir ajustes na interface possibilita que o usuário adeque o conteúdo e as funcionalidades de forma que se sinta seguro e confortável. <br>Além disso, pais, educadores e terapeutas podem configurar a plataforma para atender às necessidades específicas de cada pessoa, personalizando desde elementos visuais até a forma de interação.",
@@ -102,7 +102,7 @@ const guidelinesData = {
     },
     "modo_leitura": {
         group: "Customização",
-        title: "G08 - Modo de leitura",
+        title: "08 - Modo de leitura",
         description: "O modo de leitura é um recurso que permite ao usuário focar exclusivamente no conteúdo textual, ocultando elementos visuais desnecessários e minimizando distrações. Esse recurso é especialmente importante em sites e aplicações voltados para atividades que exigem leitura, atenção e compreensão, sendo altamente recomendável para contextos educativos ou informativos, principalmente para pessoas no espectro autista (TEA). <br>Quando ativado, o modo de leitura remove menus, banners, anúncios e outros elementos que possam competir pela atenção, exibindo apenas o texto em um formato limpo, com cores suaves e espaçamento adequado. Esse recurso pode ser semelhante ao “modo de impressão”, que também apresenta o conteúdo de forma simplificada e organizada.",
         skills: "Atenção, leitura, compreensão visual, capacidade de manter o foco e adaptação a mudanças ou transições.",
         why: "Pessoas com TEA podem apresentar maior sensibilidade a estímulos visuais e dificuldade em manter a atenção quando há muitos elementos competindo pelo foco na tela. O modo de leitura ajuda a criar um ambiente mais calmo e organizado, reduzindo a sobrecarga sensorial e aumentando a eficiência na absorção das informações. <br>Além disso, ele beneficia não apenas o público-alvo, mas qualquer pessoa que precise ler textos longos sem distrações, como estudantes, pesquisadores e profissionais.",
@@ -114,7 +114,7 @@ const guidelinesData = {
     },
     "engajamento": {
         group: "Engajamento",
-        title: "G09 - Engajamento",
+        title: "09 - Engajamento",
         description: "Desenvolver interfaces que mantenham o interesse do usuário, evitando sobrecarga e frustração.",
         skills: "Atenção, Interação",
         why: "Um design engajador ajuda a manter a atenção e a motivação, especialmente para usuários com TEA que podem ter desafios com foco e transições.",
@@ -126,7 +126,7 @@ const guidelinesData = {
     },
     "representacao_redundante": {
         group: "Representação Redundante",
-        title: "G10 - Representação redundante",
+        title: "10 - Representação redundante",
         description: "Apresentar informações de múltiplas formas (texto, ícone, cor) para garantir a compreensão.",
         skills: "Compreensão visual, Compreensão verbal ou linguística",
         why: "A redundância na apresentação da informação é crucial para usuários com diferentes estilos de aprendizagem ou deficiências sensoriais.",
@@ -139,7 +139,7 @@ const guidelinesData = {
     },
     "multimidia": {
         group: "Multimídia",
-        title: "G11 - Multimídia",
+        title: "11 - Multimídia",
         description: "Oferecer alternativas para conteúdo multimídia, como legendas para vídeos e transcrições para áudios.",
         skills: "Compreensão auditiva, Compreensão visual",
         why: "Conteúdo multimídia pode ser inacessível para pessoas com deficiência auditiva ou visual. Alternativas garantem que a informação seja acessível a todos.",
